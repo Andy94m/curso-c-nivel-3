@@ -7,9 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Web 2</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="codigo.js"></script>
 
 </head>
 <body style="color: green;">
+
+    <script>
+        function saludar(){
+            console.log("Hola Mundo...");
+            var user = document.getElementById("txtUser").value;
+            var pass = document.getElementById("txtPass").value;
+            alert("Te damos la bienvenida " + user);
+            console.log("Tu password no es secreta... mirá " + pass);
+        }
+
+
+    </script>
+
     <h1 style="color: red; font-size: 75px;">Pokedex</h1>
     <h2>Enciclopedia Pokemon</h2>
     <p style="color: blue;">En este sitio encontrarás toda la info sobre el mundo Pokemon</p>
@@ -31,14 +45,14 @@
 
     <div class="colorPrincipal">
         <label for="">User</label>
-        <input type="text">
+        <input type="text" id="txtUser">
     </div>
     <div>
         <label for="">Pass</label>
-        <input type="text">
+        <input type="password" id="txtPass">
     </div>
     <div>
-        <button>Ingresar</button>
+        <button onclick="sumar()">Ingresar</button>
     </div>
     <div>
         <p id="cuadrado">Hola ke ase</p>
