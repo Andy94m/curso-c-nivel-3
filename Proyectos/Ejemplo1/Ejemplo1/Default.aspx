@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ejemploASPX.aspx.cs" Inherits="ejemplo1.ejemploASPX" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Ejemplo1.Default" %>
 
 <!DOCTYPE html>
 
@@ -10,9 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>PAGINA VACIA</h1>
-            <h3>Te damos la bienvenida a la web</h3>
-            <a href="About">REGRESAR</a>
+            <h1>Arrancamos...
+                <h2>Home</h2>
+                <a href="Pagina1.aspx">Ingresar</a>
+            </h1>
         </div>
     </form>
 </body>

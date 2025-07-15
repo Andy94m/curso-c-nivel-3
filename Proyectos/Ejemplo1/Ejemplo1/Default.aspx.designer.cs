@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ejemplo1
+namespace Ejemplo1
 {
 
 
-    public partial class ejemploASPX
+    public partial class Default
     {
 
         /// <summary>
