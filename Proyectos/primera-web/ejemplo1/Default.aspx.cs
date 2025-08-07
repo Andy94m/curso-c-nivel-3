@@ -11,6 +11,18 @@ namespace ejemplo1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if (Request.QueryString["nombre"] != null)
+            //{
+            //    string user = Request.QueryString["nombre"].ToString();
+            //    lblUser.Text = user + " tu ingreso fue exitoso!";
+            //}
+            //else 
+            //{
+            //    lblUser.Text = "Logeate";
+            //}
+
+            string USER = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "LOGUEATE";
+
 
         }
     }

@@ -2,6 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+    <h2>Ingresaste! </h2>
+    <asp:Label Text="text" ID="lblUser" runat="server" />
+
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
             <h1 id="aspnetTitle">ASP.NET</h1>

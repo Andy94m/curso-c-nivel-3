@@ -11,7 +11,8 @@ namespace ejemplo1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            txtNombre.Text = "Ingrese su nombre: ...";
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
@@ -19,7 +20,12 @@ namespace ejemplo1
             string nombre = txtNombre.Text;
             lblSaludo.Text = "Hola " + nombre;
 
-            Response.Redirect("ejemploASPX.aspx", false);
+            Response.Redirect("Default.aspx?nombre=" + nombre, false);
+        }
+
+        protected void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            lblSecundario.Text = txtNombre.Text;
         }
     }
 }
