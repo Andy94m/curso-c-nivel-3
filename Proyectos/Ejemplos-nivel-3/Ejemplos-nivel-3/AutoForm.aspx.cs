@@ -26,6 +26,7 @@ namespace Ejemplos_nivel_3
                 Auto seleccionado = temporal.Find(x => x.Id == id);
                 txtModelo.Text = seleccionado.Modelo;
                 txtId.Text = seleccionado.Id.ToString();
+                txtId.ReadOnly = true;
             }
         }
 

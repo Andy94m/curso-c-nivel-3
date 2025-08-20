@@ -27,6 +27,7 @@ namespace Ejemplos_nivel_3
         {
             var algo = dgvAutos.SelectedRow.Cells[0].Text;
             dgvAutos.SelectedDataKey.Value.ToString();
+            Response.Redirect("AutoForm.aspx?id=" + id);
         }
     }
 }
