@@ -18,9 +18,14 @@ namespace ejemplo1
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
+            string password = txtPassword.Text;
             lblSaludo.Text = "Hola " + nombre;
 
-            Response.Redirect("Default.aspx?nombre=" + nombre, false);
+            Session.Add("usuario", nombre);
+            Session.Add("pass", password);
+
+            //Response.Redirect("Default.aspx?nombre=" + nombre + "&pass=" + txtPassword.Text, false);
+            Response.Redirect("Default.aspx", false);
         }
 
         protected void txtNombre_TextChanged(object sender, EventArgs e)

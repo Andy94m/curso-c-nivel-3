@@ -9,6 +9,7 @@ namespace ejemplo1
 {
     public partial class _Default : Page
     {
+        public string user { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             //if (Request.QueryString["nombre"] != null)
@@ -21,8 +22,10 @@ namespace ejemplo1
             //    lblUser.Text = "Logeate";
             //}
 
-            string USER = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "LOGUEATE";
+            //user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
 
+            user = Session["usuario"] != null ? Session["usuario"].ToString() : "";
+            lblUser.Text = user + " tu ingreso fue exitoso";
 
         }
     }
